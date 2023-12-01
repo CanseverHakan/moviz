@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 220px;
+  margin: 20px;
+  background-color: #eee;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image {
+  width: 220px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.textContainer {
+  margin: 10px 0px 10px 00px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.name {
+  font-weight: 600;
+  min-height: 50px;
+  padding-bottom: 5px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 14px;
+  height: 100px;
+  overflow: scroll;
+
+  background: linear-gradient(#eee, rgba(255, 255, 255, 0)) center top,
+    linear-gradient(rgba(255, 255, 255, 0), #eee) center bottom,
+    radial-gradient(
+        farthest-side at 50% 0,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      )
+      center top,
+    radial-gradient(
+        farthest-side at 50% 100%,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      )
+      center bottom;
+
+  background-repeat: no-repeat;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
+}
+
+.interactive {
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: -20px; */
+}
+
+.vote {
+  font-size: 12px;
+}
+.userRating {
+  font-size: 12px;
+  display: inline;
+}
+.star {
+  color: #f1c40f;
+}
